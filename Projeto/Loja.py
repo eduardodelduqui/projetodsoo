@@ -49,6 +49,10 @@ class Loja:
         self.__cnpj = cnpj
 
     def adicionaProduto(self, produto):
-        self.__produtos.append(produto)
-
+        
+        #verificando produto duplicado
+        if self.__produto not in self.__produtos:
+            self.__produtos.append(self.__produto)
+        else:
+            print("Produto duplicado")
 
