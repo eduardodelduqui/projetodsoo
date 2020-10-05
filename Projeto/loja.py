@@ -1,3 +1,5 @@
+from produto import Produto
+
 class Loja:
     def __init__(self, nome: str):
         self.__nome = nome
@@ -49,8 +51,11 @@ class Loja:
         self.__cnpj = cnpj
 
     def adicionaProduto(self, produto):
-        if produto not in self.__produtos:
-            self.__produtos.append(produto)
+        if isinstance(produto, Produto):
+            if produto not in self.__produtos:
+                self.__produtos.append(produto)
+            else:
+                print("Produto duplicado")
         else:
-            print("Produto duplicado")
+            print(f'{produto} não é um produto')
 
