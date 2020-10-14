@@ -1,7 +1,7 @@
-from categoria import Categoria
-from loja import Loja
-from cliente import Cliente
-from produto import Produto
+from entidade.categoria import Categoria
+from entidade.loja import Loja
+from entidade.cliente import Cliente
+from entidade.produto import Produto
 from datetime import datetime, date
 import uuid
 

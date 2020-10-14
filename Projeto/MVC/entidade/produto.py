@@ -1,4 +1,4 @@
-from categoria import Categoria
+from entidade.categoria import Categoria
 
 class Produto:
     _contador = 0

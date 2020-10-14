@@ -1,4 +1,4 @@
-from produto import Produto
+from entidade.produto import Produto
 
 class Loja:
     def __init__(self, nome: str):

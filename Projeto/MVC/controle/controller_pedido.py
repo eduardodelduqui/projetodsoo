@@ -1,4 +1,4 @@
-from pedido import Pedido
+from entidade.pedido import Pedido
 
 class ControllerPedido:
     def __init__(self):
